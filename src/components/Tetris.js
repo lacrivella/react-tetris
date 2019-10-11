@@ -6,17 +6,19 @@ import { createStage } from '../helpers/gameHelpers';
 
 function Tetris() {
   return (
-    <div>
-      <Stage stage={createStage()} />
-      <aside>
-        <div>
-          <Display text="score" />
-          <Display text="rows" />
-          <Display text="levels" />
-        </div>
-        <StartButton />
-      </aside>
-    </div>
+    <StyledTetrisWrapper>
+      <StyledTetris>
+        <Stage stage={createStage()} />
+        <aside>
+          <div>
+            <Display text="score" />
+            <Display text="rows" />
+            <Display text="levels" />
+          </div>
+          <StartButton />
+        </aside>
+      </StyledTetris>
+    </StyledTetrisWrapper>
   );
 }
 
