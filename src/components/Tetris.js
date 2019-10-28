@@ -60,7 +60,7 @@ function Tetris() {
               <Display text="levels" />
             </div>
           )}
-          <StartButton onClick={startGame} />
+          <StartButton callback={startGame} />
         </aside>
       </StyledTetris>
     </StyledTetrisWrapper>
